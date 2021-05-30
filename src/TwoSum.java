@@ -1,8 +1,10 @@
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 class TwoSum {
-    public int[] twoSum(int[] nums, int target) {
-//        Arrays.sort(nums);
+    public int[] twoSumOne(int[] nums, int target) {
+
         int sum =0;
         int[] notfound = new int[] {};
         for(int pointerA = 0; pointerA<nums.length; pointerA++){
@@ -12,6 +14,18 @@ class TwoSum {
                     return tempR;
                 }
             }
+        }
+        return notfound;
+    }
+    public int[] twoSum(int[] nums, int target) {
+        int[] notfound = new int[] {};
+        Map<Integer,Integer> sumMap = new HashMap<>();
+        for (int i =0; i < nums.length;i++){
+            int possibleValue = target-nums[i];
+            if(sumMap.containsKey(possibleValue)){
+                return new int[] { sumMap.get(possibleValue), i };
+            }
+            sumMap.put(nums[i],i);
         }
         return notfound;
     }
