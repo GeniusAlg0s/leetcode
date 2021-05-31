@@ -1,5 +1,5 @@
 class Palindrome {
-
+/////patwilliams geniusAlg0s
     public boolean isPalindrome(int x) {
         StringBuilder pCheck = new StringBuilder().append(x);
         System.out.println(pCheck);
