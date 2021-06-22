@@ -16,6 +16,7 @@ class ClimbingStairs {
         return s;
     }
     public static void main(String[]args){
+        System.out.println("leetcoode");
         System.out.println(climbStairs(9));
     }
 
