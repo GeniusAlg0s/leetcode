@@ -1,3 +1,4 @@
+
 import java.math.BigInteger;
 
 public class AddBinary {
@@ -24,4 +25,5 @@ public class AddBinary {
         System.out.println(addBinary("11","1"));
         System.out.println(addBinary("1010","1011"));
     }
+
 }
