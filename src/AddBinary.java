@@ -4,7 +4,7 @@ import java.math.BigInteger;
 public class AddBinary {
     public static String addBinary(String a, String b) {
         String r = "";
-
+// test comment
         int answer = 0;
         int i = a.length()-1;
         int j = b.length()-1;
